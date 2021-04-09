@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "SEGA LOGO FONT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SEGA LOGO FONT"), url("./components/SEGA.woff") format("woff");
+}
+
+h2 {
+  color: aliceblue;
+}
+
+h1 {
+  padding: 40px;
+  font-size: 60px !important;
+  font-family: "SEGA LOGO FONT";
+  color: #0ccac4;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+  font-family: "Abel", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+label {
+  color: aliceblue;
+}
+
+#bootstrap-overrides .btn {
+  margin-top: 10px;
+  background-color: #9f96d4;
+  border: none;
+  color: white;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+#bootstrap-overrides .btn:hover {
+  background-color: #c5c0e5;
+}
+
+input,
+textarea {
+  background-color: #1d183b;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: aliceblue;
+}
+
+.btnAdd {
+  margin: 0px !important;
+}
+.App {
+  background-color: #352f5b;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.searchBox {
+  height: 90px;
+}
+
+.searchBox * {
+  display: inline-block;
+  margin: 20px 40px;
+  vertical-align: middle;
+}
+
+.searchBox input {
+  float: right;
+}
+
+/*small phones to small tablets: 481 to 767px  */
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 42px !important;
+  }
+
+  .searchBox {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .searchBox input {
+    width: 90%;
+  }
+
+  .searchBox h2 {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .displayCard * {
+    margin: 0px;
+  }
+  .displayCard img {
+    height: 25vh;
+  }
+
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .container .cardAlign {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}

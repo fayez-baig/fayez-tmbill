@@ -1,0 +1,27 @@
+.AddCard div *{
+    display: block;
+    
+}
+
+.AddCard div{margin-bottom: 13px;}
+
+.AddCard {
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+  
+}
+
+.AddCardContainer label{
+
+    font-size: 20px;
+
+}
+
+.AddCardContainer input,textarea{
+    width: 300px;
+}
+
+.AddCardContainer textarea{
+    height: 80px;
+}
